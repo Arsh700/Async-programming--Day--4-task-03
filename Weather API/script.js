@@ -9,7 +9,7 @@ let aqi = false;
 async function request() {
 	console.log(query);
 	try {
-		let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=bb9c960ec19b4c18a4d140348222806&q=${query}&aqi=${aqi ? "yes" : "no"}`, {
+		let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=bb9c960ec19b4c18a4d140348222806&q=${query}&aqi=${aqi ? "yes" : "no"}`, {
 			method: "GET",
 			headers: {
 				"Content-Type": "application/json",
